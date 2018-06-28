@@ -32,7 +32,7 @@ pipeline{
                 echo 'Testing build'
             }
         }
-        stage('Deploy&Cleaning Repo'){
+        stage('Cleaning Repo'){
             steps{
                 sh 'sudo rm -rf ant-demo'
             }
