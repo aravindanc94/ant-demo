@@ -18,7 +18,7 @@ pipeline{
         stage('Git cloning repo makkpsss/express-sample'){
             steps{
                 sh 'echo \'pulling repo!\''
-                sh 'sudo git clone https://github.com/Aravindanchellam/ant-demo'
+                sh 'sudo git clone https://github.com/aravindanc94/ant-demo.git'
             }
         }
         stage('Building war file'){
