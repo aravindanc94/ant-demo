@@ -8,6 +8,6 @@ CMD ["apt-get","update"]
 
 CMD ["apt-get","install","-y supervisor openjdk-8-jdk"]
 
-ADD /home/dit-user/workspace/Ant_Project/ant-demo/AntExample.war $CATALINA_HOME\webapps\
+ADD /home/dit-user/workspace/Ant_Project/ant-demo/dist/AntExample.war   /usr/local/tomcat
 
 EXPOSE 8080
