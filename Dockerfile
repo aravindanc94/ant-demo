@@ -11,3 +11,5 @@ CMD ["apt-get","install","-y openjdk-8-jdk"]
 COPY ["/dist/AntExample.war", "/usr/local/tomcat/webapps/examples/"]
 
 EXPOSE 8080
+
+RUN ["catalina.sh"]
