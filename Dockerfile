@@ -6,7 +6,7 @@ CMD ["add-apt-repository","ppa:webupd8team/java"]
 
 CMD ["apt-get","update"]
 
-CMD ["apt-get","install","-y supervisor openjdk-8-jdk"]
+CMD ["apt-get","install","-y openjdk-8-jdk"]
 
 COPY ["/dist/AntExample.war", "/usr/local/tomcat/webapps/examples/"]
 
