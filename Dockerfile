@@ -16,7 +16,7 @@
 
 # EXPOSE 8080
 ###################################
-FROM tomcat:8.0.20-jre8
+FROM tomcat
 
 COPY ["/dist/AntExample.war", "/usr/local/tomcat/webapps/"]
 
@@ -24,4 +24,4 @@ COPY ["build.xml","/usr/local/tomcat/conf/build.xml"]
 
 CMD ["catalina.sh", "run"]
 
-EXPOSE 9999
+EXPOSE 8080
