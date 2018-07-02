@@ -24,4 +24,4 @@ COPY ["build.xml","/usr/local/tomcat/conf/build.xml"]
 
 CMD ["catalina.sh", "run"]
 
-EXPOSE 8080
+EXPOSE 9999
